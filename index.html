@@ -1,89 +1,91 @@
-<!DOCTYPE html>
-<html lang="en" >
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Paris Public Spaces</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 
-<head>
-  <meta charset="UTF-8">
-  <title>Boreal battleground, Mapbox GL, scroll-driven navigation + fly-to</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+		<!-- Mapbox Stuff -->
+		<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+	</head>
+	<body class="landing">
 
-  
-</head>
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<body>
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Paris Public Spaces</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Generic</a></li>
+											<li><a href="elements.html">Elements</a></li>
+											<li><a href="#">Sign Up</a></li>
+											<li><a href="#">Log In</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
 
-  <head>
-  <meta charset='utf-8' />
-  <title>Paris Public Spaces</title>
-  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.4/mapbox-gl.js'></script>
-  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.4/mapbox-gl.css' rel='stylesheet' />
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Paris Public Spaces</h2>
+							<p>This is where our<br />
+							very well formed thesis<br />
+							is going to go</p>
+							<ul class="actions">
+								<li><a href="map/index.html" class="button special">Go On a Tour</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">Learn More</a>
+					</section>
 
-</head>
+					
 
-<body>
-  <div id="wrapper">
-    <a href="index.html">
+				<!-- Footer -->
+					<footer id="footer">
+						<!--
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul> -->
+						<ul class="copyright">
+							<li>&copy; 🇫🇷🇫🇷👑🏰🇫🇷🇫🇷</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
 
-      <div id="share">Back to home
-      </div>
-    </a>
+			</div>
 
-    <div id='map'></div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
-    <div id='features'>
-      <a name="1"></a>
-
-      <section id='cover' class='active'>
-        <h1>Paris Public Spaces</h1>
-        <p>
-        </p>
-
-
-        <small class="scroll"><div id="first-button"><a href="#2">Next &darr;</a> </div>   </small>
-      </section>
-      <a name="2"></a>
-
-      <section id='one'>
-        <h3>Title one</h3>
-
-
-        <p>Our boreal forest adventure began in this village about 750 kilometres northwest of Montreal. A mining and sawmill town, Matagami is gateway to James Bay. Good place to get gas, groceries and guns.
-
-        </p>
-        <small class="scroll"><div class="next"><a href="#3">Next &darr;</a>  </div> </small>
-        <a name="3"></a>
-      </section>
-      <section id='two'>
-        <h3>Title two</h3>
-
-
-        <p>We slept two nights in hunting camps with plywood walls of the Crees Robbie and Annie Saganash and their son, Stanley. We carried water from Lake Quenonisca to wash dishes. Loggers worked near the camp. We slaughtered a moose and ate it.
-        </p>
-        <small class="scroll"><div class="next"><a href="#4">Next &darr;</a>  </div> </small>
-      </section>
-      <a name="4"></a>
-      <section id='three'>
-        <h3>Title three</h3>
-
-
-        <p>The Cree trucks travelled on rutted, rocky logging roads through the forest to the camp of Allan Gull, an old-timer who heats his hunting camp with spruce logs and lights it with a generator.
-        </p>
-      </section>
-    </div>
-  </div>
-
-</body>
-  
-  
-
-    <script  src="js/index.js"></script>
-
-
-
-
-</body>
-
+	</body>
 </html>
