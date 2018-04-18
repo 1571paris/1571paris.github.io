@@ -13,27 +13,53 @@ var map = new mapboxgl.Map({
 
 var chapters = {
   'one': {
-    bearing: 100,
-    center: [2.350,48.852],
-    zoom: 16.8,
+    //duration: 3500,
+    center: [2.350597,48.866932],
+    bearing: 0,
+    zoom: 16.7,
     pitch: 0,
     speed: 0.2
-    //duration: 4000
-
   },
   'two': {
-    //duration: 3500,
-    center: [2.345,48.863],
-    bearing: 100,
-    zoom: 16.7,
-    pitch: 8,
-    speed: 0.2
+    bearing: 0,
+    center: [2.348844,48.864306],
+    zoom: 16.8,
+    speed: 0.2,
+    pitch: 0
   },
   'three': {
-    bearing: 150,
-    center: [2.354,48.854],
+    bearing: 0,
+    center: [2.347966,48.861665],
     zoom: 16.8,
-    speed: 0.6,
+    speed: 0.2,
+    pitch: 0
+  },
+  'four': {
+    bearing: 0,
+    center: [2.347411,48.861139],
+    zoom: 16.8,
+    speed: 0.2,
+    pitch: 0
+  },
+  'five': {
+    bearing: 0,
+    center: [2.346631,48.858142],
+    zoom: 16.8,
+    speed: 0.2,
+    pitch: 0
+  },
+  'six': {
+    bearing: 0,
+    center: [2.349056,48.857098],
+    zoom: 16.8,
+    speed: 0.2,
+    pitch: 0
+  },
+  'seven': {
+    bearing: 0,
+    center: [2.349485,48.852706],
+    zoom: 16.8,
+    speed: 0.2,
     pitch: 0
   },
 };
