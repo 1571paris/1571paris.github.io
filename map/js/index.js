@@ -12,6 +12,14 @@ var map = new mapboxgl.Map({
 });
 
 var chapters = {
+  'zero': {
+    //duration: 3500,
+    center: [2.351606,48.868982],
+    bearing: 0,
+    zoom: 16.7,
+    pitch: 0,
+    speed: 0.2
+  },
   'one': {
     //duration: 3500,
     center: [2.350597,48.866932],
