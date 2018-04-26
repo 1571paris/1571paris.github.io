@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Map - Paris Public Spaces</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    		<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Paris Public Spaces</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="stops.html">Procession Stops</a></li>
+											<li><a href="gardens.html">Gardens</a></li>
+											<li><a href="markets.html">Markets</a></li>
+											<li><a href="map.html">Map</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+				<style>
+			        /*body { margin:0; padding:0; }*/
+			        #map { position:absolute; top:6%; bottom:10%; width:100%; }
+			        #key {
+					  position: fixed;
+					  /*background-color: #000000;*/
+					  color: white;
+					  /*border-radius: 20px;*/
+					  /*opacity: 0.7;*/
+					  padding: 5px;
+					  /*-moz-box-sizing: border-box;*/
+					  /*box-sizing: border-box;*/
+					  bottom: 2%;
+					  left: 3%;
+					  width: 60%;
+					  height: 5%;
+					}
+
+			        .legend { list-style: none; }
+					.legend li { float: left; margin-right: 10px; }
+					.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+					/* your colors */
+					.legend .privategreenspace { background-color: #77AE09; }
+					.legend .publicgreenspace { background-color: #0DD353; }
+					.legend .markets { background-color: #1542D5; }
+					.legend .merchanthousing { background-color: #1BC3E4; }
+			    </style>
+				<div id='map'></div>
+				<script>
+				mapboxgl.accessToken = 'pk.eyJ1IjoiYWxleGFkZHkiLCJhIjoiY2pjcXpha3owMDR0ZzMybnE2bjU0cHlkayJ9.j9UbVyMsnnZVzEjsrjkU9A';
+				var map = new mapboxgl.Map({
+				    container: 'map',
+				    style: 'mapbox://styles/alexaddy/cjd95jarv9m672rp4xkfiqhye',
+				    zoom: 14,
+				    center: [2.345030, 48.863721]
+				});
+				map.addControl(new mapboxgl.NavigationControl());
+				</script>
+
+				<div id="key">
+				<ul class="legend">
+			    <li><span class="privategreenspace"></span> Private Greenspace</li>
+			    <li><span class="publicgreenspace"></span> Public Greenspace</li>
+			    <li><span class="markets"></span> Markets</li>
+			    <li><span class="merchanthousing"></span> Merchant Housing</li>
+			    </ul></div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
